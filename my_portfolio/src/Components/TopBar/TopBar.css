@@ -1,1 +1,21 @@
-/*# sourceMappingURL=TopBar.css.map */
+h2 {
+  margin: 0;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #673ab7;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  margin-right: 70px;
+}
+nav ul li {
+  cursor: pointer;
+}/*# sourceMappingURL=TopBar.css.map */
