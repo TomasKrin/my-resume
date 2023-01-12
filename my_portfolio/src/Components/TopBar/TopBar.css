@@ -8,6 +8,7 @@ nav {
   justify-content: space-between;
   background-color: #673ab7;
   padding: 20px;
+  box-shadow: #8561c5 0px 1px 20px;
 }
 nav ul {
   display: flex;
