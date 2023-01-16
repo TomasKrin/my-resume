@@ -1,6 +1,7 @@
-h2 {
+.logo {
   margin: 0;
   color: white;
+  cursor: pointer;
 }
 
 nav {
