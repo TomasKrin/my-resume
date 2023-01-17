@@ -6,12 +6,17 @@
   height: 400px;
   width: 350px;
 }
+.cardContainer p {
+  margin: 0;
+}
 .cardContainer img {
   height: 200px;
   width: 350px;
 }
-.cardContainer .moreButton {
-  margin-top: 15px;
+.cardContainer .buttonDiv {
+  margin: 20px;
+}
+.cardContainer .buttonDiv .moreButton {
   padding: 5px 30px;
   background-color: #673ab7;
   color: white;
@@ -19,6 +24,6 @@
   border: none;
   cursor: pointer;
 }
-.cardContainer .moreButton:hover {
+.cardContainer .buttonDiv .moreButton:hover {
   background-color: #8561c5;
 }/*# sourceMappingURL=ProjectCard.css.map */

@@ -6,23 +6,33 @@
     height: 400px;
     width: 350px;
 
+    p {
+        margin: 0;
+    }
+
     img {
         height: 200px;
         width: 350px;
     }
 
-    .moreButton {
-        margin-top: 15px;
-        padding: 5px 30px;
-        background-color: #673ab7;
-        color: white;
-        border-radius: 15px;
-        border: none;
-        cursor: pointer;
+    .buttonDiv {
+        margin: 20px;
 
-        &:hover {
-            background-color:
-                #8561c5;
+        .moreButton {
+            padding: 5px 30px;
+            background-color: #673ab7;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color:
+                    #8561c5;
+            }
         }
     }
+
+
+
 }

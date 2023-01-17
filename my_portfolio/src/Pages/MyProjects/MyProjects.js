@@ -10,7 +10,10 @@ const MyProjects = () => {
         <div className="myProjectsContent">
           <h1>My Projects:</h1>
           <div className="grid-table">
-            {projects.map(projectC => <ProjectCard title={projectC.title} image={projectC.image} subtitle={projectC.subtitle} key={projectC.title}/>)}
+
+            {projects.map(projectC => 
+            <ProjectCard title={projectC.title} image={projectC.image} subtitle={projectC.subtitle} key={projectC.title}/>)
+            }
           </div>
         </div>
     </div>

@@ -1,6 +1,10 @@
 import '../ProjectCard/ProjectCard.css';
+import { useNavigate } from 'react-router-dom';
+import { myProjectsRoute } from '../../Consts/consts';
 
 const ProjectCard = ({title, image, subtitle }) => {
+  const MembershipProjectRoute = (title) => myProjectsRoute + `/${title}`;
+  const navigate = useNavigate();
   return (
     <div className='cardContainer'>
         <img src={image} alt="pic"/>
@@ -8,7 +12,9 @@ const ProjectCard = ({title, image, subtitle }) => {
             {title}
         </h3>
         <p>{subtitle}</p>
-        <button className='moreButton'>Check further..</button>
+        <div className='buttonDiv'>
+          <button className='moreButton' onClick={()=>navigate(MembershipProjectRoute(title))}>Check further..</button>
+        </div>
     </div>
   )
 }
