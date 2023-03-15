@@ -1,6 +1,7 @@
-import { useState } from "react"
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+
 import styled from 'styled-components';
+import { useState } from "react"
 
 const SliderDiv = styled.div`
   position: relative;
@@ -68,7 +69,7 @@ const ImageSlider = ({picturesArr}) => {
         </RightArrow>
         {picturesArr.map((pic, index)=>{
         return(
-          <div className={index === current ? 'slide active' : 'slide'}>
+          <div key={index} className={index === current ? 'slide active' : 'slide'}>
             {index === current && (<Image key={index} src={pic.image} alt="projectImage"/>)}
           </div>
         )
